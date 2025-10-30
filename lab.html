@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #e0e0e0;
+            color: #555;
+        }
+        .lunch-break {
+            background-color: #ffe0b2;
+            font-weight: bold;
+        }
+        .nested-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+        }
+        .nested-table th, .nested-table td {
+            border: none;
+            padding: 5px;
+            font-size: 0.9em;
+        }
+        .nested-table th {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption>College Weekly Timetable - Fall 2025</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Day/Time</th>
+                <th colspan="2">9:00 AM - 11:00 AM</th>
+                <th colspan="2">11:00 AM - 1:00 PM</th>
+                <th rowspan="7" class="lunch-break">L<br>U<br>N<br>C<br>H<br><br>1:00 PM - 2:00 PM</th>
+                <th colspan="2">2:00 PM - 4:00 PM</th>
+                <th colspan="2">4:00 PM - 6:00 PM</th>
+            </tr>
+            <tr>
+                <th>Period 1</th>
+                <th>Period 2</th>
+                <th>Period 3</th>
+                <th>Period 4</th>
+                <th>Period 5</th>
+                <th>Period 6</th>
+                <th>Period 7</th>
+                <th>Period 8</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>Maths</td>
+                <td>Physics</td>
+                <td>Chemistry</td>
+                <td>Biology</td>
+                <td>English</td>
+                <td>History</td>
+                <td>Computer Science</td>
+                <td>Elective A</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>Physics</td>
+                <td>Maths</td>
+                <td>English</td>
+                <td>Chemistry</td>
+                <td>Biology</td>
+                <td>Computer Science</td>
+                <td>History</td>
+                <td>Elective B</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>Chemistry</td>
+                <td>Biology</td>
+                <td>Maths</td>
+                <td>Physics</td>
+                <td>History</td>
+                <td>English</td>
+                <td>Elective A</td>
+                <td>Computer Science</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>Biology</td>
+                <td>English</td>
+                <td>Physics</td>
+                <td>Maths</td>
+                <td>Computer Science</td>
+                <td>Chemistry</td>
+                <td>Elective B</td>
+                <td>History</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td colspan="4">
+                    <table class="nested-table">
+                        <caption>Friday Morning Labs</caption>
+                        <tr>
+                            <th>Time</th>
+                            <th>Subject</th>
+                        </tr>
+                        <tr>
+                            <td>9:00-11:00</td>
+                            <td>Physics Lab</td>
+                        </tr>
+                        <tr>
+                            <td>11:00-1:00</td>
+                            <td>Chemistry Lab</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Maths</td>
+                <td>English</td>
+                <td>Project Work</td>
+                <td>Sports</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td colspan="8">Optional Workshops / Club Activities</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="9">Note: Schedule is subject to change. Please check department notices for updates.</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
