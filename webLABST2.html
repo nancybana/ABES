@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple News Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #555;
+            margin-top: -10px;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            text-align: center;
+            margin: 15px 0;
+            font-size: 18px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #0073e6;
+            padding: 6px 10px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+            color: #000;
+        }
+
+        /* Section Titles */
+        h2, h3 {
+            color: #333;
+        }
+
+        /* Images */
+        img {
+            display: block;
+            margin: 10px auto;
+            width: 60%;
+            height: auto;
+        }
+
+        /* Video & iFrame */
+        iframe, video {
+            display: block;
+            margin: 15px auto;
+            width: 70%;
+            height: 400px;
+            border: none;
+        }
+
+        /* Audio */
+        audio {
+            display: block;
+            margin: 10px auto;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        hr {
+            margin: 20px 0;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Global Daily News</h1>
+    <p class="subtitle">Your Trusted Source for Latest Updates</p>
+    <hr>
+
+    <div class="navbar">
+        <a href="#world">World</a> |
+        <a href="#sports">Sports</a> |
+        <a href="#entertainment">Entertainment</a> |
+        <a href="#podcast">Podcast</a> |
+        <a href="#contact">Contact</a>
+    </div>
+
+    <hr>
+
+    <!-- WORLD NEWS -->
+    <h2 id="world">World News</h2>
+    <p>Today's top headline: Global leaders meet to discuss climate change initiatives.</p>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/BBC_World_News_2022_%28Boxed%29.svg/1200px-BBC_World_News_2022_%28Boxed%29.svg.png?20220425111453"
+         alt="World News">
+
+    <p><a href="https://www.bbc.com/news" target="_blank">Read more on BBC</a></p>
+
+    <hr>
+
+    <!-- SPORTS -->
+    <h2 id="sports">Sports Update</h2>
+    <p>Highlights of yesterday’s football match with thrilling last-minute goals!</p>
+
+    <iframe src="https://www.youtube.com/embed/4kQ0Po4NkAA"></iframe>
+
+    <hr>
+
+    <!-- ENTERTAINMENT -->
+    <h2 id="entertainment">Entertainment Buzz</h2>
+    <p>New movie trailer released today. Fans are excited!</p>
+
+    <video controls>
+        <source src="test-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <hr>
+
+    <!-- PODCAST -->
+    <h2 id="podcast">News Podcast</h2>
+    <p>Listen to today’s top headlines:</p>
+
+    <audio controls>
+        <source src="videoplayback1.m4a" type="audio/mp4">
+        Your browser does not support the audio element.
+    </audio>
+
+    <hr>
+
+    <!-- CONTACT -->
+    <h3 id="contact">Contact Us</h3>
+    <p>Email: nancybana404@gmail.com</p>
+    <p>&copy; 2025 Global Daily News</p>
+
+    <p><b>Nancy Bana</b></p>
+    <p><b>2025B01010512</b></p>
+
+</body>
+</html>
