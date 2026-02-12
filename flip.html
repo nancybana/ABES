@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Clone - Student Project</title>
+    <style>
+        /* Basic Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Roboto, Arial, sans-serif; background: #f1f3f6; color: #212121; }
+
+        /* Blue Header */
+        .header { background: #2874f0; color: white; padding: 12px 0; position: sticky; top: 0; z-index: 1000; }
+        .top-header { display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        .logo-area h2 { font-style: italic; font-size: 22px; }
+        .logo-area span { color: #ffe500; font-size: 14px; font-weight: bold; }
+
+        .search-bar { flex: 1; max-width: 550px; margin: 0 30px; display: flex; }
+        .search-input { width: 100%; padding: 10px 15px; border: none; border-radius: 2px 0 0 2px; outline: none; font-size: 14px; }
+        .search-btn { background: white; border: none; padding: 0 15px; color: #2874f0; cursor: pointer; border-radius: 0 2px 2px 0; font-size: 18px; }
+
+        .header-actions { display: flex; gap: 30px; align-items: center; font-weight: 600; font-size: 15px; }
+        .login-btn { background: white; color: #2874f0; padding: 6px 35px; border-radius: 2px; text-decoration: none; font-weight: bold; }
+
+        /* White Nav */
+        .nav-bar { background: #fff; border-bottom: 1px solid #dbdbdb; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        .nav-links { max-width: 1200px; margin: 0 auto; padding: 12px 20px; display: flex; justify-content: space-between; list-style: none; font-size: 14px; }
+        .nav-links a { text-decoration: none; color: #212121; font-weight: 500; }
+
+        /* Banner */
+        .hero { max-width: 1200px; margin: 10px auto; padding: 0 10px; }
+        .banner-img { width: 100%; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+
+        /* Sections */
+        .section-container { max-width: 1200px; margin: 20px auto; background: white; padding: 20px; border-radius: 2px; box-shadow: 0 1px 5px rgba(0,0,0,0.1); }
+        .section-title { font-size: 20px; font-weight: 600; margin-bottom: 20px; border-bottom: 1px solid #f0f0f0; padding-bottom: 15px; display: flex; justify-content: space-between; align-items: center; }
+        .view-all-btn { background: #2874f0; color: white; border: none; padding: 8px 15px; border-radius: 2px; cursor: pointer; font-size: 13px; }
+
+        /* Product Cards */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+        .card { text-align: center; padding: 20px; border: 1px solid #f0f0f0; transition: all 0.2s ease-in-out; text-decoration: none; color: inherit; display: block; }
+        .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.15); transform: translateY(-3px); }
+        
+        .card img { height: 180px; width: 100%; object-fit: contain; margin-bottom: 15px; }
+        .card h3 { font-size: 14px; margin-bottom: 8px; color: #212121; }
+        .card .price-tag { color: #388e3c; font-size: 14px; font-weight: 600; }
+        .card .brand { color: #878787; font-size: 12px; margin-bottom: 5px; }
+
+        /* Footer */
+        .footer { background: #172337; color: white; padding: 50px 20px; margin-top: 50px; font-size: 12px; }
+        .footer-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
+        .footer-col h4 { color: #878787; margin-bottom: 20px; text-transform: uppercase; }
+        .footer-col p { line-height: 2.2; color: #fff; }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="top-header">
+            <div class="logo-area">
+                <h2>Flipkart <span>Explore Plus</span></h2>
+            </div>
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Search for products, brands and more">
+                <button class="search-btn">🔍</button>
+            </div>
+            <div class="header-actions">
+                <a href="#" class="login-btn">Login</a>
+                <span>Cart</span>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-bar">
+        <ul class="nav-links">
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Fashion</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Appliances</a></li>
+            <li><a href="#">Travel</a></li>
+            <li><a href="#">Top Offers</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=1200&h=300&fit=crop" alt="Sale Banner" class="banner-img">
+    </div>
+
+    <section class="section-container">
+        <div class="section-title">
+            Best of Fashion
+            <button class="view-all-btn">VIEW ALL</button>
+        </div>
+        <div class="grid">
+            <a href="#" class="card">
+                <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=300&h=400&fit=crop" alt="Casual T-Shirt">
+                <h3>Men's Casual T-Shirts</h3>
+                <p class="brand">Classic Polo, Levi's</p>
+                <p class="price-tag">Min 50% Off</p>
+            </a>
+            <a href="#" class="card">
+                <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=200&h=200&fit=crop" alt="Shoes">
+                <h3>Running Shoes</h3>
+                <p class="brand">Nike, Skechers</p>
+                <p class="price-tag">Under ₹999</p>
+            </a>
+            <a href="#" class="card">
+                <img src="https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=200&h=200&fit=crop" alt="Dress">
+                <h3>Ethnic Wear</h3>
+                <p class="brand">Libas, Biba</p>
+                <p class="price-tag">60-80% Off</p>
+            </a>
+            <a href="#" class="card">
+                <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=200&h=200&fit=crop" alt="Bag">
+                <h3>Leather Handbags</h3>
+                <p class="brand">Lavie, Caprese</p>
+                <p class="price-tag">Extra 10% Off</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="section-container">
+        <div class="section-title">
+            Electronics & Gadgets
+            <button class="view-all-btn">VIEW ALL</button>
+        </div>
+        <div class="grid">
+            <a href="#" class="card">
+                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=200&h=200&fit=crop" alt="Laptop">
+                <h3>Top Laptops</h3>
+                <p class="brand">HP, Dell, Apple</p>
+                <p class="price-tag">From ₹24,990</p>
+            </a>
+            <a href="#" class="card">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=200&h=200&fit=crop" alt="Headphones">
+                <h3>Premium Headphones</h3>
+                <p class="brand">Sony, JBL, Bose</p>
+                <p class="price-tag">Up to 70% Off</p>
+            </a>
+            <a href="#" class="card">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=200&h=200&fit=crop" alt="Watch">
+                <h3>Smart Watches</h3>
+                <p class="brand">Apple, Samsung</p>
+                <p class="price-tag">Special Deal</p>
+            </a>
+            <a href="#" class="card">
+                <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=200&h=200&fit=crop" alt="Camera">
+                <h3>DSLR & Mirrorless</h3>
+                <p class="brand">Canon, Nikon</p>
+                <p class="price-tag">Buy Now</p>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>About</h4>
+                <p>Contact Us</p>
+                <p>About Us</p>
+            </div>
+            <div class="footer-col">
+                <h4>Help</h4>
+                <p>Payments</p>
+                <p>Shipping</p>
+            </div>
+            <div class="footer-col">
+                <h4>Policy</h4>
+                <p>Return Policy</p>
+                <p>Security</p>
+            </div>
+            <div class="footer-col">
+                <h4>Mail Us</h4>
+                <p>Flipkart Internet Pvt Ltd,</p>
+                <p>Bengaluru, 560103</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
